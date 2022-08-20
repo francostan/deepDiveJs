@@ -26,8 +26,6 @@ describe('Calculadora que use notación polaca inversa', function() {
     calculadora.agregar(3);
     calculadora.agregar(4);
     calculadora.sumar();
-    expect(calculadora.valor()).toEqual(7);
-    calculadora.sumar();
     expect(calculadora.valor()).toEqual(9);
   });
 
@@ -90,7 +88,7 @@ describe('Calculadora que use notación polaca inversa', function() {
     expect(typeof CalculadoraNPI.prototype.sumar).toEqual('function');
     expect(typeof CalculadoraNPI.prototype.restar).toEqual('function');
     expect(typeof CalculadoraNPI.prototype.dividir).toEqual('function');
-    expect(typeof CalculadoraNPI.prototype.valor).toEqual('function');
+    
   });
 
   it('La calculadora debería ser una instancia de CalculadoraNPI', function() {

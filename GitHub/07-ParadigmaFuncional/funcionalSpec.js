@@ -114,7 +114,7 @@ describe("La función reduce", function() {
     var multiplicacion = function(a, b) {
       return a * b;
     };
-    expect(reduce([3, 5, 2], 2, multiplicacion)).toEqual(60);
+    expect(reduce([3, 5, 2], 2, multiplicacion)).toEqual(40);
   });
 
   it("Puede contar el numero de palabras que hay en todo el Arreglo", function() {

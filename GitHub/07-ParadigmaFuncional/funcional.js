@@ -56,3 +56,24 @@ function reduce(arr, init, func) {
 function cuentaPalabrasReduce(arr) {
   return cuentaPalabras(arr);
 }
+function suma(arr){
+  return reduce(arr,0,(a,b)=>a+b);
+}
+function every(arr,func){
+  var band=true;
+  for(var i=0;i<arr.length;i++){
+    if(!func(arr[i])){
+      band=false;
+    }
+  }
+  return band;
+}
+function any (arr,func){
+  var band=false;
+  for(var i=0;i<arr.length;i++){
+    if(func(arr[i])){
+      band=true;
+    }
+  }
+  return band;
+}

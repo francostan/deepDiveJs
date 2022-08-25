@@ -104,7 +104,7 @@ describe('factores recursivo', function() {
   it('se invoca a si mismo', function() {
     // Necesario para una función recursiva
     spyOn(window, 'factores').and.callThrough();
-    factores(2);
+    factores(4);
     expect(factores.calls.count()).toBeGreaterThan(1);
   });
 });

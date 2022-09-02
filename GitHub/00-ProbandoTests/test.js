@@ -1,10 +1,7 @@
-function saludar(a){
-    if(a == undefined){
-    return 'Hola!';
-    }else{
-    return "Hola, "+a+"!";
-    }
+function saludar(nombre) {
+    return nombre ? `Hola, ${nombre}!` : 'Hola!';
 }
+
 
 function sumar(a,b){
     return a + b;

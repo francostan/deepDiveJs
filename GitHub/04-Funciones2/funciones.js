@@ -1,7 +1,7 @@
-function concatenar (){
-    var args = Array.prototype.slice.call(arguments);
-    return args.join("");
-}
+function concatenar(...params) {
+    return params.join('');
+  }
+  //aqui usamos spread operator para pasar los parametros
 function invocarFunciones(){
     var args = Array.prototype.slice.call(arguments);
     var result = "";

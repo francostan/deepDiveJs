@@ -47,3 +47,14 @@ function bandFact(n) {
     }
   }
 }
+//FACTORES REPASO PREP
+function factores (num,arr=[],denominadorActual=2) {
+  if (num === 1) return arr;
+  //en este caso si 9%2 nos dara 1(verdadero), por lo tanto no es un factor y debemos sumarle 1
+  if (num % denominadorActual) denominadorActual++;
+  else{
+    arr.push(denominadorActual);
+    num /= denominadorActual;
+  }
+  return factores(num,arr,denominadorActual);
+}

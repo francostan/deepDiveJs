@@ -5,6 +5,7 @@ function factorialIterativo(n) {
   }
   return resultado;
 }
+
 var acumulador = 1;
 function factorial(n) {
   if (n === 0) {
@@ -14,12 +15,22 @@ function factorial(n) {
   n -= 1;
   return factorial(n);
 }
+//FACTORIAL REPASO PREP
+function factorial(n) {
+  //caso base
+  if (!n//es lo mismoque igualar a 0
+  ) {return 1}
+  //caso recursivo
+  return n * factorial(n-1)
+}
+
+
 function fib(n) {
-  if (n === 0 || n === 1) {
-    return 1;
-  }
+  //REPASO PREP
+  if (n<=1)  return 1;
   return fib(n - 1) + fib(n - 2);
 }
+
 
 function factores(n) {
   if (n % bandFact(n) !== 0 || bandFact(n) === n) {

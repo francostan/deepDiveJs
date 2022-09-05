@@ -1,0 +1,9 @@
+REPASO DEL PREP
+RECURSION(mamushka)
+funcion que se llama a si misma
+siempre es importante que tenga un corte, para que no se llene el call stack
+fn recursiva tiene dos aspectos
+recordar definir las variables del caso base por parametro
+-caso base=condicional
+-caso recursivo(llamado a la funcion con el nuevo parametro)
+
